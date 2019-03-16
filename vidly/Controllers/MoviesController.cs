@@ -40,6 +40,10 @@ namespace vidly.Controllers
         {
             return Content(year + "/" + month);
         }
-        
+
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 }

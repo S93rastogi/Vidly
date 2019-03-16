@@ -182,6 +182,7 @@
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Customer\Customer.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
