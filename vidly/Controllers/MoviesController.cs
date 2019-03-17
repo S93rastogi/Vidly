@@ -45,5 +45,12 @@ namespace vidly.Controllers
         {
             return View();
         }
+
+        public ActionResult Details(int id)
+        {
+            return View(id == 1 ? 
+                new Movie() {Name = "Bohemian Raphsody"} : 
+                new Movie() {Name = "Captain Marvel"});
+        }
     }
 }
