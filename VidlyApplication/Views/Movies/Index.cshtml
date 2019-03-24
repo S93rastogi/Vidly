@@ -1,0 +1,19 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "../Shared/_Layout.cshtml";
+}
+<style type="text/css">.MovieList {
+     padding-top: 100px;
+     color: darkred
+ }</style>
+<h1 class="MovieList">Movies</h1>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Name</th>
+    </tr>
+    <tr><td>@Html.ActionLink("Bohemian Raphsody", "Details", "Movies", new { id = 1 }, null)</td></tr>
+    <tr><td>@Html.ActionLink("Captain Marvel", "Details", "Movies", new { id = 2 }, null)</td></tr>
+</table>
+

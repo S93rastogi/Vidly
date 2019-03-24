@@ -1,0 +1,27 @@
+﻿@using vidly.ViewModels
+@model vidly.ViewModels.Customers
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    h1.allign {
+        padding-top: 100px;
+        color: darkred;
+    }
+</style>
+<h1 class="allign">Customers</h1>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th style="border: darkred">Name</th>
+    </tr>
+    @foreach (var customer in Model.RegisteredCustomers)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(@customer.Name, "Details", "Customer", new { id = @customer.Id }, null)
+            </td>
+        </tr>
+    }
+</table>
+
