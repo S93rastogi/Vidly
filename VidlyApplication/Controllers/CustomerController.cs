@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
-using vidly.Models;
-using vidly.ViewModels;
+using VidlyApplication.Models;
+using VidlyApplication.ViewModels;
 
-namespace vidly.Controllers
+namespace VidlyApplication.Controllers
 {
     public class CustomerController : Controller
     {

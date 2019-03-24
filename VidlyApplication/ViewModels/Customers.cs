@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using vidly.Models;
+﻿using System.Collections.Generic;
+using VidlyApplication.Models;
 
-namespace vidly.ViewModels
+namespace VidlyApplication.ViewModels
 {
     public class Customers
     {
